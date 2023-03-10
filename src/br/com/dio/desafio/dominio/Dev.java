@@ -71,8 +71,19 @@ public class Dev {
         return Objects.equals(nome, dev.nome) && Objects.equals(conteudoInscritos, dev.conteudoInscritos) && Objects.equals(conteudoConcluidos, dev.conteudoConcluidos);
     }
 
+
+
+
     @Override
     public int hashCode() {
         return Objects.hash(nome, conteudoInscritos, conteudoConcluidos);
+    }
+
+    @Override
+    public String toString() {
+        return  "nome=" + nome +
+                ", conteudoInscritos=" + conteudoInscritos +
+                ", conteudoConcluidos=" + conteudoConcluidos +
+                '}';
     }
 }
